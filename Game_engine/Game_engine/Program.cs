@@ -9,16 +9,32 @@ namespace Game_engine
 			//start of program, this is the loading screen, ment as a bit of test code.
 			Console.WriteLine ("Made by Strand In Space Games");
 			//this calls the function intro, check the comments on intro for more details.
-			intro ();
 			Console.WriteLine ("Engine by Halo and Zac");
-			intro ();
 			Console.WriteLine ("Story by Zac and Halo");
-			intro ();
 			Console.WriteLine ("Works best on anything with anything with a cpu and a screen, with a working keyboard, oh and needs c# and windows...");
-			intro ();
 			Console.WriteLine ("Check GitHub /haloguysm1th/strandinspace_games for the code");
 			intro ();
+			mm ();
+		}
+
+		public static void mm(){
+			int mm = 0;
+			Console.Clear();
+			Console.WriteLine ("Do you want to play a game? yes  =1 /no = 2");
+			mm = Convert.ToInt32 (Console.Read());
+			if (mm == 2) {
+					System.Environment.Exit(1);
+			} else{
+				game();
+			}
+
+		}
+
+		public static void game(){
+			Console.Clear();
+			Console.WriteLine ("temp");
 			Console.ReadKey ();
+
 		}
 		public static void intro (){
 			/* This is the function intro, it first will declair a double precise float, then a int,
@@ -31,13 +47,13 @@ namespace Game_engine
 			double i = 0;
 			int b = 0;
 			while(i <100000000){
-				while (b < 30) {
+				while (b < 10) {
 					Console.WriteLine ();
 					b++;
 				}
-				//get rid of convert, it is not needed.
-				i = Convert.ToDouble (i + .1);
+				i = i + .1;
 			}
+		}
 		}
 	}
 }
