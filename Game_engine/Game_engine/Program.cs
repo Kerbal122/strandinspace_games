@@ -26,7 +26,7 @@ namespace Game_engine
 			mm = Convert.ToInt32 (Console.Read());
 			// if mm the int is = to 2 , then exit else start the game
 			if (mm == 2) {
-					System.Environment.Exit(1);
+				System.Environment.Exit(1);
 			} else{
 				game();
 			}
@@ -34,30 +34,40 @@ namespace Game_engine
 		}
 
 		public static void game(){
-			//This is where most of the game will be writ, any story, most functions will be made outside of it.
 			Console.Clear();
-			Console.WriteLine ("temp");
-			Console.ReadKey ();
+			int q1 = 0; int q2 = 0; int q3 = 0; int q4 = 0; int q5 = 0; int q6 = 0; int q7 = 0; int q8 = 0; int q9 = 0; int q10 = 0;int q11 = 0;int q12 = 0;int q13 = 0;int q14 = 0;int q15 = 0;int q16 = 0;int q17 = 0;int q18 = 0;int q19 = 0;int q20 = 0;
+			Console.WriteLine ("Please think of a word");
+			timeout ();
+			Console.WriteLine ("from now on 1 means yes 2 = no");
+		}
+		public static void timeout(){
+			int i = 0;
+			while (i < 1000000) {
+				Console.WriteLine ("nano seconds have passed" + i);
+				i++;
+			}
 
 		}
-		public static void intro (){
-			/* This is the function intro, it first will declair a double precise float, then a int,
+
+	}
+	public static void intro (){
+		/* This is the function intro, it first will declair a double precise float, then a int,
 			both are equal to 0. Then we have a while statement which says, while the double i is = to 0
 			then, it will see if b less then 30, if it is, it write's nothing to the screen, after this, 
 			we change I to a double again, this needs to be cleaned up a little. anyways, after we convert i
 			we at .1 to it, thus creating a timer, so that it looks better, this is sill under construction
 			and I will probably fix it so that it not only looks better, but works better as well. 
 			*/
-			double i = 0;
-			int b = 0;
-			while(i <100000000){
-				while (b < 10) {
-					Console.WriteLine ();
-					b++;
-				}
-				i = i + .1;
+		double i = 0;
+		int b = 0;
+		while(i <100000000){
+			while (b < 10) {
+				Console.WriteLine ();
+				b++;
 			}
-		}
+			i = i + .1;
 		}
 	}
+}
+}
 }
