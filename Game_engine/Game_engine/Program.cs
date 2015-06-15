@@ -34,20 +34,10 @@ namespace Game_engine
 		}
 
 		public static void game(){
+			//This is where most of the game will be writ, any story, most functions will be made outside of it.
 			Console.Clear();
-			int q1 = 0; int q2 = 0; int q3 = 0; int q4 = 0; int q5 = 0; int q6 = 0; int q7 = 0; int q8 = 0; int q9 = 0; int q10 = 0;int q11 = 0;int q12 = 0;int q13 = 0;int q14 = 0;int q15 = 0;int q16 = 0;int q17 = 0;int q18 = 0;int q19 = 0;int q20 = 0;
-			Console.WriteLine ("Please think of a word");
-			timeout ();
-			Console.WriteLine ("from now on 1 means yes 2 = no");
-		}
-		public static void timeout(){
-			int i = 0;
-			while (i < 1000000) {
-				Console.WriteLine ("nano seconds have passed" + i);
-				i++;
-			}
-
-		}
+			Console.WriteLine ("temp");
+			Console.ReadKey ();
 
 		}
 		public static void intro (){
