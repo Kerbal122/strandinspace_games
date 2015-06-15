@@ -18,10 +18,13 @@ namespace Game_engine
 		}
 
 		public static void mm(){
+			//function main menu, delcairs int
 			int mm = 0;
 			Console.Clear();
-			Console.WriteLine ("Do you want to play a game? yes  =1 /no = 2");
+			Console.WriteLine ("Do you want to play a game? yes  = 1 /no = 2 ");
+			//reads the user input, then stores it, seeing as it should be a number in a  int.
 			mm = Convert.ToInt32 (Console.Read());
+			// if mm the int is = to 2 , then exit else start the game
 			if (mm == 2) {
 					System.Environment.Exit(1);
 			} else{
@@ -31,6 +34,7 @@ namespace Game_engine
 		}
 
 		public static void game(){
+			//This is where most of the game will be writ, any story, most functions will be made outside of it.
 			Console.Clear();
 			Console.WriteLine ("temp");
 			Console.ReadKey ();
