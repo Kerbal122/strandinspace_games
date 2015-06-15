@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 
 namespace Game_engine
 {
 	class MainClass
 	{
-				public static void Main (string[] args)
+		public static void Main (string[] args)
 		{
 			//start of program, this is the loading screen, ment as a bit of test code.
 			Console.WriteLine ("Made by Strand In Space Games");
@@ -18,10 +18,13 @@ namespace Game_engine
 		}
 
 		public static void mm(){
+			//function main menu, delcairs int
 			int mm = 0;
 			Console.Clear();
-			Console.WriteLine ("Do you want to play a game? yes  =1 /no = 2");
+			Console.WriteLine ("Do you want to play a game? yes  = 1 /no = 2 ");
+			//reads the user input, then stores it, seeing as it should be a number in a  int.
 			mm = Convert.ToInt32 (Console.Read());
+			// if mm the int is = to 2 , then exit else start the game
 			if (mm == 2) {
 					System.Environment.Exit(1);
 			} else{
@@ -46,6 +49,7 @@ namespace Game_engine
 
 		}
 
+		}
 		public static void intro (){
 			/* This is the function intro, it first will declair a double precise float, then a int,
 			both are equal to 0. Then we have a while statement which says, while the double i is = to 0
